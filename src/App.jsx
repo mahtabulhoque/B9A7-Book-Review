@@ -1,27 +1,29 @@
 import "./Navbar";
 import Banner from "./Banner";
-import Recipes from "./Recipes";
 import Navbar from "./Navbar";
-import Recipes2 from "./Components/Recipes2";
-import Cart from "./Components/Cart";
-import Recipes2Container from "./Components/Recipes2Container";
+import Recipemenu from "./Components/Recipecart/Recipemenu";
+import Sidebar from "./Components/Sidebar";
+
 
 function App() {
+
+  const handleCook=()=>{
+    console.log('hello');
+  }
   return (
     <div>
       <Navbar></Navbar>
       <Banner></Banner>
-      <Recipes></Recipes>
 
-      <div className="grid grid-cols-12 gap-3">
-        <div className="col-span-8">
-          <Recipes2Container></Recipes2Container>
-        </div>
-        <div className="col-span-4">
-        <Cart></Cart>
-        </div>
+
+      <div className="grid grid-cols-12 my-4">
+      <div className="col-span-7">
+      <Recipemenu handleCook={handleCook}></Recipemenu>
       </div>
-
+      <div className="col-span-5">
+      <Sidebar></Sidebar>
+      </div>
+      </div>
     </div>
   );
 }
