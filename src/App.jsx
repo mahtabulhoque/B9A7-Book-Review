@@ -3,13 +3,17 @@ import Banner from "./Banner";
 import Navbar from "./Navbar";
 import Recipemenu from "./Components/Recipecart/Recipemenu";
 import Sidebar from "./Components/Sidebar";
+import { useState } from "react";
 
 
 function App() {
 
-  const handleCook=()=>{
-    console.log('hello');
+  const [sidebar, setSidebar]=useState([]);
+
+  const handleCook=(recipe)=>{
+    setSidebar([...sidebar,recipe]);
   }
+  console.log(sidebar);
   return (
     <div>
       <Navbar></Navbar>
@@ -21,7 +25,7 @@ function App() {
       <Recipemenu handleCook={handleCook}></Recipemenu>
       </div>
       <div className="col-span-5">
-      <Sidebar></Sidebar>
+      <Sidebar sidebar={sidebar}></Sidebar>
       </div>
       </div>
     </div>

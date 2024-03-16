@@ -1,5 +1,6 @@
 
 const Mainrecipe = ({recipe,handleCook}) => {
+   
     const {image,name,description,ingredients,preparing_time,calories}=recipe
     // console.log(name);
   return (
@@ -38,7 +39,7 @@ const Mainrecipe = ({recipe,handleCook}) => {
         </div>
 
         <div className="card-actions">
-          <button className="btn bg-[#0BE58A] rounded-full " onClick={handleCook}>Want to Cook</button>
+          <button className="btn bg-[#0BE58A] rounded-full " onClick={()=>handleCook(recipe)}>Want to Cook</button>
         </div>
       </div>
     </div>

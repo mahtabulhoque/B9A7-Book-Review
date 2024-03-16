@@ -1,10 +1,12 @@
 
-const Sidebar = () => {
+const Sidebar = (sidebar) => {
+
+
     return (
         <div className="bg-gray-200 w-full border-2 text-center">
-            <h1>Want to cook: <span>01</span></h1>
+            <h1>Want to cook: {sidebar.length}</h1>
            
-            <div className="flex">
+            {/* <div className="flex">
                 <table className="table">
                     <thead>
                     <tr>
@@ -14,22 +16,33 @@ const Sidebar = () => {
                         <th>Calories</th>
                     </tr>
                     </thead>
-                    <tbody>
-                        
-                    </tbody>
+
+                    <div>
+                     {
+                       
+                     }
+                     </div>
                    
                 </table>
              
                 <button className="btn bg-[#0BE58A] rounded-full ">Want to Cook</button>
                
-            </div>
-            
-            <div className="divider"></div>
+            </div> */}
 
-            <h2>Currently cooking: <span>02</span></h2>
+           
             
 
-            <div className="flex">
+
+
+
+
+
+            {/* <div className="divider"></div> */}
+
+            {/* <h2>Currently cooking: <span>0</span></h2> */}
+            
+
+            {/* <div className="flex">
                 <table className="table">
                     <thead>
                     <tr>
@@ -43,7 +56,7 @@ const Sidebar = () => {
 
                     </tbody>
                 </table>
-            </div>
+            </div> */}
         </div>
     );
 };
