@@ -1,6 +1,6 @@
 [
     {
-        "recipe_image": "image_url_1.jpg",
+        "recipe_image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "recipe_id": 1,
         "recipe_name": "Spaghetti Carbonara",
         "short_description": "Classic Italian pasta dish with creamy sauce",
@@ -10,7 +10,7 @@
     },
 
     {
-        "recipe_image": "image_url_2.jpg",
+        "recipe_image": "https://media.istockphoto.com/id/1872304026/photo/indian-chicken-curry-on-plate.webp?s=2048x2048&w=is&k=20&c=X_jP0b52ykREOrLblAqCQBz_jFM99K-ItMOKzyJl8HQ=",
         "recipe_id": 2,
         "recipe_name": "Chicken Tikka Masala",
         "short_description": "Creamy and spicy Indian chicken dish",
@@ -20,7 +20,7 @@
     },
 
     {
-        "recipe_image": "image_url_3.jpg",
+        "recipe_image": "https://images.unsplash.com/photo-1604909052743-94e838986d24?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "recipe_id": 3,
         "recipe_name": "Caprese Salad",
         "short_description": "Simple and refreshing Italian salad",
@@ -30,7 +30,7 @@
     },
 
     {
-        "recipe_image": "image_url_4.jpg",
+        "recipe_image": "https://images.unsplash.com/photo-1668724775591-f50dd8ed65a5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "recipe_id": 4,
         "recipe_name": "Beef Stir-Fry",
         "short_description": "Quick and flavorful Asian-inspired beef dish",
@@ -40,7 +40,7 @@
     },
 
     {
-        "recipe_image": "image_url_5.jpg",
+        "recipe_image": "https://images.unsplash.com/photo-1673436977889-334fcab20436?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "recipe_id": 5,
         "recipe_name": "Vegetable Curry",
         "short_description": "Hearty and aromatic vegetarian curry",
@@ -50,7 +50,7 @@
     },
 
     {
-        "recipe_image": "image_url_6.jpg",
+        "recipe_image": "https://images.unsplash.com/photo-1583743089695-4b816a340f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "recipe_id": 6,
         "recipe_name": "Chocolate Chip Cookies",
         "short_description": "Classic homemade cookies with gooey chocolate chips",
