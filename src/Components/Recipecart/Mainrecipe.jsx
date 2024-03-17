@@ -1,7 +1,7 @@
 
-const Mainrecipe = ({recipe,handleCook}) => {
+const Mainrecipe = ({recipe}) => {
    
-    const {image,name,description,ingredients,preparing_time,calories}=recipe
+    const {image,name,description,ingredients,preparing_time,calories}=recipe;
     // console.log(name);
   return (
     <div className="card w-96 bg-base-100 shadow-xl border-2">
@@ -17,14 +17,18 @@ const Mainrecipe = ({recipe,handleCook}) => {
 
         <hr className="bg-black"/>
          
-        <h1 className="text-[#282828] text-[25px] text-bold]">Ingredients:5</h1>
+        <h1 className="text-[#282828] text-[25px] text-bold]">Ingredients:{ingredients.length}</h1>
         <div className="text-[#878787] text-[18px]">
         <h2>
-            <li>{ingredients[0]}</li>
+
+          {
+            ingredients.map((ingredient,index) =><li key={index}>{ingredient}</li>)
+          }
+            {/* <li>{ingredients[0]}</li>
             <li>{ingredients[1]}</li>
             <li>{ingredients[2]}</li>
             <li>{ingredients[3]}</li>
-            <li>{ingredients[5]}</li>
+            <li>{ingredients[5]}</li> */}
         </h2>
         </div>
         <hr/>
@@ -39,11 +43,13 @@ const Mainrecipe = ({recipe,handleCook}) => {
         </div>
 
         <div className="card-actions">
-          <button className="btn bg-[#0BE58A] rounded-full " onClick={()=>handleCook(recipe)}>Want to Cook</button>
+          <button className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default Mainrecipe;
