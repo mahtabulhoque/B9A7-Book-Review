@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 const Mainrecipe = ({recipe,handleCook}) => {
    
@@ -17,15 +18,17 @@ const Mainrecipe = ({recipe,handleCook}) => {
 
         <hr className="bg-black"/>
          
-        <h1 className="text-[#282828] text-[25px] text-bold]">Ingredients:5</h1>
+        <h1 className="text-[#282828] text-[25px] text-bold]">Ingredients:{ingredients.length}</h1>
         <div className="text-[#878787] text-[18px]">
-        <h2>
-            <li>{ingredients[0]}</li>
-            <li>{ingredients[1]}</li>
-            <li>{ingredients[2]}</li>
-            <li>{ingredients[3]}</li>
-            <li>{ingredients[5]}</li>
-        </h2>
+        <ul>
+
+          {
+            ingredients.map((ingredient,index)=> <li key={index}>{ingredient}</li>)
+          }
+
+
+           
+        </ul>
         </div>
         <hr/>
 
@@ -45,5 +48,11 @@ const Mainrecipe = ({recipe,handleCook}) => {
     </div>
   );
 };
+
+Mainrecipe.propTypes={
+  recipe:PropTypes.object.isRequired,
+  handleCook:PropTypes.func.isRequired
+}
+
 
 export default Mainrecipe;

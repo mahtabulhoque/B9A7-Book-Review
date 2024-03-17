@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect, useState } from "react";
 import Mainrecipe from "./Mainrecipe";
 
@@ -7,7 +9,7 @@ const Recipemenu = ({handleCook}) => {
     
 
     useEffect(()=>{
-        fetch('Recipemenu.json')
+        fetch('recipemenu.json')
         .then (res=>res.json())
         .then (data=>setRecipeMenu(data))
     },[])
@@ -33,5 +35,7 @@ const Recipemenu = ({handleCook}) => {
         </div>
     );
 };
-
+Recipemenu.propTypes={
+    handleCook:PropTypes.func.isRequired
+}
 export default Recipemenu;
