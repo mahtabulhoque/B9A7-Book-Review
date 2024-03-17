@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Mainrecipe = ({recipe}) => {
+const Mainrecipe = ({recipe,handleCook}) => {
    
-    const {image,name,description,ingredients,preparing_time,calories}=recipe;
+    const {image,name,description,ingredients,preparing_time,calories}=recipe
     // console.log(name);
   return (
     <div className="card w-96 bg-base-100 shadow-xl border-2">
@@ -20,13 +20,15 @@ const Mainrecipe = ({recipe}) => {
          
         <h1 className="text-[#282828] text-[25px] text-bold]">Ingredients:{ingredients.length}</h1>
         <div className="text-[#878787] text-[18px]">
-        <h2>
-            <li>{ingredients[0]}</li>
-            <li>{ingredients[1]}</li>
-            <li>{ingredients[2]}</li>
-            <li>{ingredients[3]}</li>
-            <li>{ingredients[5]}</li>
-        </h2>
+        <ul>
+
+          {
+            ingredients.map((ingredient,index)=> <li key={index}>{ingredient}</li>)
+          }
+
+
+           
+        </ul>
         </div>
         <hr/>
 
@@ -40,11 +42,17 @@ const Mainrecipe = ({recipe}) => {
         </div>
 
         <div className="card-actions">
-          <button className="btn bg-[#0BE58A] rounded-full">Want to Cook</button>
+          <button className="btn bg-[#0BE58A] rounded-full " onClick={()=>handleCook(recipe)}>Want to Cook</button>
         </div>
       </div>
     </div>
   );
 };
+
+Mainrecipe.propTypes={
+  recipe:PropTypes.object.isRequired,
+    handleCook:PropTypes.func.isRequired
+}
+
 
 export default Mainrecipe;
